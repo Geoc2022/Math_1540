@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% PACAKAGES %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%% GRAPHICS/FONTS
+\usepackage{amsmath,amsfonts,graphicx,tikz-cd,pgfplots}
+
+%%%%%%%%%%%%%% FORMATTING
+\usepackage{geometry,titlesec,hyperref,xhfill,setspace,float,fancyhdr,xifthen,lastpage}
+
+%%%%%%%%%TIKZ STUFF
+\usetikzlibrary{positioning,calc,decorations.markings,shapes.geometric}
+\usepgfplotslibrary{polar,fillbetween}
+
+%%%%%%FOR THE GRAPHS
+\pgfplotsset{my style/.append style={axis x line=middle, axis y line=
+middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
+
+%%%%%%MARGINS
+\geometry{
+a4paper,
+left=0.25in,
+right=0.25in,
+top=0.25in,
+bottom=0.75in
+}
+
+%%%%%%MAKES THE HEADER AND FOOTER FANCY
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+
+%%%%PAGENUMBERS_________REMEMBER TO CHANGE THIS REGULARLY!!!!!!
+\cfoot{Page \thepage/\pageref*{LastPage}}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% COMMANDS %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\underscore}{\underline{\hspace{2mm}}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\Aut}{\text{Aut}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\PGL}{\text{PGL}}
+\newcommand{\PSL}{\text{PSL}}
+\newcommand{\End}{\text{End}}
+\newcommand{\lra}{\longrightarrow}
+
+\newcommand{\del}{\partial}
+\newcommand{\RP}{\mathbb{R}P}
+\newcommand{\K}{\emph{K}}
+
+%TEXT COMMAND
+\newcommand{\T}[1][]{\text{#1}}
+\newcommand{\TB}[1][]{\mathbb{#1}}
+
+\newcommand{\xlra}[1][]{%
+  \ifthenelse{\isempty{#1}}%
+    {\xrightarrow{\phantom{,,,,,,}}}% if #1 is empty
+    {\xrightarrow{\phantom{,,}#1\phantom{,,}}}% if #1 is not empty
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%BEGINNING OF ACTUAL DOCUMENT %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+%%%%TITLE______REMEMBER TO REGULARLY CHANGE THIS!!!!
+\title{Math 1540 Spring 2023 - Homework 3}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-0.5in}
+%%%%%%%%%%%%%%%%
+\begin{spacing}{1.5}
+\noindent \textbf{Instructions:}  This assignment is worth twenty points.  Please complete the following problems assigned below.  Submissions with insufficient explanation may lose points due to a lack of reasoning or clarity.  If you are handwriting your work, please ensure it is readable and well-formatted for the grader.\\
+\\
+Be sure when uploading your work to \textbf{assign problems to pages}.  Problems with pages not assigned to them \textbf{may not be graded}.  
+\end{spacing}
+
+
+
+
+%%%%%%%%%%%%%%%%%%
+\vspace{10mm}\noindent
+\textbf{Textbook Problems: }72, 76, 77
+\\
+
+\noindent
+\textbf{Additional Problems:}  We're largely working in fields, so you can typically assume $E,F,B$ are fields unless otherwise stated.\\
+\\
+1.  Let $\alpha \in E/F$.  Prove that $F(\alpha) = \{f(\alpha)/g(\alpha) \in E \, | \, f,g \in F[x]\text{ and } g(\alpha) \neq 0\}$.  \\
+\\
+2.  Let $f(x) \in \Z_{2}[x]$ be defined by $f(x) = x^4+x+1$.  Let $E$ be a splitting field of $f(x)$.  Calculate, with proof, $[E:\Z_{2}]$. \\
+\\
+3.  Consider $\Q(\sqrt{2+\sqrt{3}},\sqrt{2-\sqrt{3}})/\Q$.  Is this extension simple?  If so, find an element that generates the extension, along with its minimal polynomial.  Calculate the degree of this extension.   \\
+\\
+4.  Let $x^{2} + x + 2 \in \Z_{5}[x]$ and consider a splitting field $E$.  As observed in class, $E$ is a vector space over $\Z_{5}$.  Using a root of $f(x)$, construct a faithful representation of $\Z_{5}^{\times} \lra \GL(2,\Z_{5})$.  Write out the image of your representation.   
+%%%%%%%%
+%%%%%%%%% 
+\end{document}

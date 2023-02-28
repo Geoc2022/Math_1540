@@ -1,0 +1,41 @@
+\lecture{1}{2023-01-25}{}
+
+\section{Motivation}
+
+Galois theory is a branch of mathematics that studies the connection between algebraic equations and their solutions. One of the main motivations for studying Galois theory is the Abel-Ruffini Theorem:
+
+\begin{theorem}[Abel-Rufin]
+	\label{thm:abel-rufin}
+	There exists a polynomial of degree \(5\) with solutions that are not expressible using algebraic operators (\(+, - , \cdot, /, \sqrt[n]{}\) )
+\end{theorem}
+
+\section{Classical Formulas}
+
+Polynomials of degree \([2,4]\) have equations for their solutions.
+These equations are often found by reducing a polynomial using a shift:
+Given a polynomial: 
+\[
+	f(x) = a_{n}x^{n} + a_{n-1}x^{n-1} + \ldots a_0  
+\] A shift will get rid of the \(x^{n-1}\) term
+\[
+	f(x - \frac{a_{n-1} }{na_n}) = a_{n}x^{n} + \ldots a_0 
+\]
+\begin{example}[Quadratic Formula]
+	\label{ex:quadratic formula}
+	\begin{eqnarray*}
+		X^2 + bX +c = 0 \\
+		\text{Using a shift of \(-\frac{b}{2}\) removes the linear term:} \\
+		(x-\frac{b}{2})^2 + b(x - \frac{b}{2}) + c = 0 \\
+		(x^2-bx+\frac{b^2}{4}) + bx - \frac{b^2}{2} + c = 0 \\
+		x^2+\frac{b^2}{4} - \frac{b^2}{2} + c = 0 \\
+		x^2-\frac{b^2}{4} + c = 0 \\
+		x^2= \frac{b^2}{4} - c \\
+		x = \pm \sqrt{\frac{b^2}{4} - c} \\
+		X = \pm \sqrt{\frac{b^2}{4} - c} - \frac{b}{2} \\
+	\end{eqnarray*}
+\end{example}
+
+
+
+
+

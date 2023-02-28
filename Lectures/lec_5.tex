@@ -1,0 +1,30 @@
+\lecture{5}{2023-02-03}{}
+
+\begin{theorem}[mod p-criterion]
+	\label{thm:mod p-criterion}
+	Let \(R\) domain, \(F\) field, \(s: R \to F\) be a ring map Let \(p(x) \in R[x]\) if \(deg(s(p)) = deg(p)\) and \(s(p)\) irreducible in \(F[x]\), then \(p(x)\) irreducible in \(R[x]\)
+\end{theorem}
+\begin{example}
+	\(p(x)=8x^3 - 6x - 1\) in \(\Z[x]\) irreducible?
+	\(s: \Z \to \Z_5\)
+	\(s(p) = 3x^3 - x - 1\) And then we can check with 5 inputs in \(\Z_5\)
+\end{example}
+
+\begin{theorem}[Eisenstein criterion]
+	\label{thm:eisenstein criterion}
+	Let \(f(x) \in \Z [x]\)
+	\[
+		f(x) = a_{n} x^n \ldots a_1 x + a_0  
+	\]
+	If there exists a prime \(p\) so that \(p|a_i\) for \(0 \leq i \leq n\) and \(p^2 \not | a_0\) then \(f(x)\) is irreducible over \(Q[x]\)
+\end{theorem}
+
+\begin{definition}[splitting field]
+	\label{def:splitting field}
+	A splitting field is the smallest field extension over the field of the coefficients of a polynomial such that it contains all roots of the polynomial.
+\end{definition}  
+
+\begin{theorem}
+	Let \(a \in E\) and \(p(x) \in F[x]\) here \(\frac{E}{F}\) \(p(x)\) monic irreducible has \(a\) as a root
+\end{theorem} 
+

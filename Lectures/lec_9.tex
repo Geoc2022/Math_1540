@@ -1,0 +1,40 @@
+\lecture{8}{2023-02-10}{}
+
+Let \(F\) be a feild, \(\sigma: F(\alpha_1, \ldots a_n ) \to F(\alpha_1 \ldots a_n )\) so that \(\sigma(1_F) = 1_F\) and \(\sigma(a_i) \to a_i\)
+then \(\sigma =\) identity
+
+\begin{definition}[seperable field]
+    \label{def:seperable field}
+    Let \(f(x) \in F[x]\) has factorization \(f(x) = u p_1(x) \ldots p_n(x)\)
+    We say that \(f(x)\) is seqperable iff each \(p_i(x)\) has no repeated toots
+\end{definition}  
+
+Let \(f(x) \in F[x]\) irreducable, if \(f^\prime(x) \neq 0\) then \(f(x)\) is seperable
+
+\begin{definition}[perfect]
+    \label{def:perfect}
+    A field is called perfect if every non-constant \(f(x) \in F[x]\) is seperable 
+\end{definition}
+\begin{example}[perfect fields]
+    \label{ex:perfect fields}
+    Fields of charteristic \(0\) and finite fields 
+\end{example} 
+
+% what is universality
+
+\begin{definition}[seperable element]
+    \label{def:seperable element}
+    Let \(\alpha \in E/F\), we say \(\alpha\) is seperable if it's minimal polynomial is seperable in \(F[\alpha]\)
+\end{definition}
+
+\begin{theorem}[1]
+    \label{thm:1}
+    Let \(f(x) \in F[x]\), \(f^\prime (x) = \sigma^\prime (f(x))\), \(E\) a spliting feild of \(f(x)\) and \(E^\prime \) be a spliting feild of \(f^\prime (x)\)
+    Then \begin{enumerate}
+        \item \(\exists \hat{\sigma}: E \to E^\prime \)
+        \item if \(f(x)\) is seperabel, then # of \(\hat{\sigma}\) is \([E:F]\) 
+    \end{enumerate}
+\end{theorem}
+\begin{corollary}
+    Any two finite feilds of order \(p^n\) are isomorphic 	
+\end{corollary} 

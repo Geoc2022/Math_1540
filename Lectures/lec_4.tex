@@ -1,0 +1,35 @@
+\lecture{4}{2023-02-01}{}
+
+\begin{definition}[splits]
+	\label{def:splits}
+	A polynomial, \(f(x)\), splits in \(F[x]\) iff it can be written as a product of linear factors i.e \(F\) contains all the roots of \(f(x)\) 
+\end{definition}
+
+\begin{theorem}
+	Let \(f(x) \in F[x]\), there exists a field extension \(\frac{E}{F}\)   for which \(f(x)\) splits
+\end{theorem}
+\begin{proof}
+	By induction:
+	
+	\emph{Base Case:} Trivial
+	
+	\emph{Inductive Step:} let \(f(x)\) be deg(f) = n + 1
+	Write \(f(x) = p(x)g(x)\) \(p(x)\) irreduaclie. Find a field (\(B/F\)) for which \(p(x)\) has a root \(p(x)=(x-a)h(x)\)then \(f(x)=(x-a)h(x)g(x)\) then falls to previous case 
+\end{proof}
+
+\begin{note}
+	This result is similar to the FTA
+\end{note}
+
+\begin{definition}[prime subfield]
+	\label{def:prime subfield}
+	Let \(F\) be a field, then
+	\[
+		P = \bigcap_{0 \neq S \in F} S
+	\]
+	\(P\) be the prime subfield of \(F\)  
+\end{definition}
+\begin{theorem}
+	\(P\) a prime subfield is either isomorphic to \(\Q\) or \(\Z_p\)  
+\end{theorem} 
+% Add proof from hw

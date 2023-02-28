@@ -1,0 +1,35 @@
+\lecture{3}{2023-01-30}{}
+
+\section{Splitting Fields}
+
+\begin{lemma}[Euclid's Lemma]
+	\label{lem:euclid's lemma}
+	Let \(F\) be a field, if \(p(x)\) divides \(q_1(x)q_2(x)\ldots q_n(a) \) with \(p(x)\) irreducible then \(p(x)\) divides one of the \(q_i(x)\)
+	\begin{note}
+		Irreducibility is important because for example \(x^2|x \cdot x\) but \(x^2\) doesn't factor either
+	\end{note}
+\end{lemma}
+\begin{proof}
+	By induction:
+	
+	\emph{Base Case:} 
+	Let \(f(x) = 1\) then, \(p(x) | f(x)q_1(x)\) 
+	Trivial since there is only one polynomial for \(p(x)\) to divide
+
+	\emph{Inductive Step:} 
+	Let \(f(x) = q_1(x)q_2(x)\ldots q_n(a)\)
+	\((p(x), f(x)) = 1\), so there exist \(a(x)\) and \(b(x)\) s.t. \(a(x)p(x) + b(x)f(x) = 1\)
+	Therefore, 
+	\[
+		p(x)a(z)q_{n+1}(x) + f(x)q_{n+1}(x)b(x) = q_{n+1}(x)
+		p(x) | q_{n+1}(x)
+	\]
+\end{proof}
+
+\begin{proposition}
+	Let \(F\)  be a field and \(p(x)\) be irreducible. Then \(F[x](p(x))\) is a field and contains a root to \(p(x) = 0\)
+	\begin{note}
+		\((\forall a \in F)(p(a) \neq 0)\) since it's irreducible
+		\(F\) is inside \(F[x]/(p(x))\) 
+	\end{note} 
+\end{proposition} 

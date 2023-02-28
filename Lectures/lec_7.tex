@@ -1,0 +1,20 @@
+\lecture{0}{2023-02-08}{}
+
+\begin{proof}
+    To show this let's define a map \(\phi: F[x] \to E\) s.t. \(\phi(f) = f(a)\). The kernel of this map would be \((p(x))\). Because \(E\) is a field then the image of \(phi\) is a domain. Since \(\ker(\phi) = (p(x))\) is prime then \(2 \implies 1, 3\)
+    
+    Let's define another map \(\tau: F[x]/(p(x)) \to img(\phi)\). Then \(img(\phi) = F(a)\) and so \(\tau(c) = c \forall c \in F\), \(\tau(\bar{x}) = a\).
+    
+    We know that \(F(a) \subseteq img(\phi)\), so we want to also show \(F(a) \supseteq img(\phi)\) 
+    
+    If \(F, a \subseteq S\) then all polynomials in \(a\) are in \(S\) Therefore, \(F(a) \supseteq img(\phi)\)  
+\end{proof}
+
+
+
+\begin{theorem}[existence of splitting field]
+    \label{thm:existence of splitting field}
+    We know there exists some field such that \(f(x)\) splits. We can write \(f(x) u(x-a_1)\ldots (x-a_n)\). Then \(f(x)\) must split in \(S = F(a_1\ldots a_n)\) 
+\end{theorem}
+
+

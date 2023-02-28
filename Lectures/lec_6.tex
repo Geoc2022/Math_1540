@@ -1,0 +1,59 @@
+\lecture{6}{2023-02-06}{}
+
+If there exists another \(q(x) \in F[x]\) with \(q(a) = 0\), monic irreducible, then \((p-q)(x) = 0\) at \(a\) and \(deg(p-q) < deg(p)\) which contridicts the first part.
+
+\begin{definition}[E/F as vector-space]
+	\label{def:e/f as vector-space}
+	We call the degree of \(\frac{E}{F}\) = \([E:F]\)
+\end{definition}
+
+\begin{example}
+	\(\Q(\sqrt[3]{2})\) is a 3-dimentional extension 
+\end{example} 
+\begin{example}
+	\(Q(\sqrt{2},\sqrt{3})\) is 4-dimentional extension
+\end{example} 
+
+\begin{theorem}
+	Let \(p(x) \in F[x]\)  be irreducible of \(deg(p) = d\) then \(E = F[x]/(p(x))\) is an extension of degree \(d\)
+\end{theorem}
+\begin{note}
+	\(E\) contains a root of \(p(x)\), \(a\). We should claim that an F-basis of \(E\) looks like powers of \(a\) 
+\end{note} 
+
+% Let's assume that we can find some F-coefficeants \(c_i\)s for which \(c_0 + c_1 a \ldots c_{d-1}a^{d-1} = 0\) Then we have a polynomial \(f(x) = c_0 + c1 x \ldots c_{d-1}x^{d-1}\), but that's a contradiction since it has degree less than \(p\)
+
+% We can write any \(f(x) \in f[x]\) as \(q(x)p(x) + r(x)\). \(\bar{f(x)} = \bar{r(x)}\) therefore \([E:F] \leq d\)
+
+\begin{definition}[Field Extension]
+	\label{def:field extension)}
+	\[
+		F(a_1 \ldots a_n) = \bigcap_{F \subseteq S \subseteq E} S
+	\]
+	where \(a_1, \ldots a_n \in S\) 
+\end{definition}  
+
+\begin{definition}[simple]
+	\label{def:simple}
+	a field extension is called simple if it only adds one element
+\end{definition}
+
+\begin{theorem}
+	\(E/F\) is a finite extension \(\implies\) it's algebraic (each element \(a \in E\) is algebraic)
+\end{theorem} 
+\begin{proof}
+	Pick a \(a \in E\) if \(a\) is a root if there's a linear combination of it's powers that equals zero 
+\end{proof}
+
+\begin{theorem}
+	Let \(E/F\) be field extension, \(a \in E\)  be algebraic over F
+	then \begin{enumerate}
+		\item There's a monic irreducible \(p(x) \in F[x]\) having \(a\) as a root
+		\item There exists an isomorphism between \(F[x]/(p(x)) \to F(a)\)
+		\item \(p(x)\) unique monic of the least degree in \(F[x]\) with \(a\) as a root
+		\item \([F(a):F] = deg(p)\)    
+	\end{enumerate}
+\end{theorem} 
+ß
+
+
